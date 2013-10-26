@@ -27,3 +27,16 @@
 <br />
 
 <%= link_to 'New Product', new_product_path %>
+
+<p>Average Price: <%= Product.average('price') %><p>
+<p>Maximum Price: <%= Product.maximum('price') %></p>
+<p>Amount of products: <%= Product.count %></p>
+<p>Quantity of all products: <%= Product.sum('stock_quantity') %></p>
+
+
+
+
+<% 100.times do %>
+<p>Chunky Bacon</p>
+<% end %>
+
